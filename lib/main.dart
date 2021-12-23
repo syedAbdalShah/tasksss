@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         title: 'ProductBox Flutter Exercise',
         theme: MyThemeData.themeData,
         routes: {},
-        home: DashboardScreen(),
+        home: LoginScreen(),
       );
     });
   }

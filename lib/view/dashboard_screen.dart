@@ -42,7 +42,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
               if (state is FetcedPictureState) {
                 return buildBody(size, state.allPost);
               }
-              return CupertinoActivityIndicator();
+              return CircularProgressIndicator(
+                color: Colors.red,
+              );
             },
             listener: (context, state) {
               print(state);

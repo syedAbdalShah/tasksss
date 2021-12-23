@@ -1,0 +1,4 @@
+#Thu Dec 23 18:26:33 PKT 2021
+base.0=C\:\\Users\\TxLabz\\Downloads\\Productbox-Flutter-Exercise\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

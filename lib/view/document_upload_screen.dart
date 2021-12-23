@@ -10,6 +10,7 @@ import 'package:productbox_flutter_exercise/constants/theme_data.dart';
 
 import 'package:productbox_flutter_exercise/ui_componenet/pdf_viewer_screen.dart';
 import 'package:productbox_flutter_exercise/ui_componenet/picture_viewer.dart';
+import 'package:productbox_flutter_exercise/view/dashboard_screen.dart';
 import 'package:sizer/sizer.dart';
 
 class DocumentUploadedScreen extends StatefulWidget {
@@ -98,6 +99,12 @@ class _DocumentUploadedScreenState extends State<DocumentUploadedScreen> {
                   'Done',
                   style: TextStyle(color: Colors.white),
                 ),
+                onTap: enableButton() == true
+                    ? () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (_) => DashboardScreen()));
+                      }
+                    : null,
               ),
             )
           ],

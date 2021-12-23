@@ -34,7 +34,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      decoration: backgroundPicture(),
       child: Scaffold(
         backgroundColor: MyThemeData.themeData.backgroundColor,
         body: BlocConsumer(
@@ -122,11 +121,5 @@ class _LoginScreenState extends State<LoginScreen> {
 
   SizedBox verticalGap(Size size, double customSize) {
     return SizedBox(height: size.height * customSize);
-  }
-
-  BoxDecoration backgroundPicture() {
-    return BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage(Strings.kBackGroundPic), fit: BoxFit.fill));
   }
 }
